@@ -38,6 +38,7 @@ public class SimFrame extends JFrame implements ActionListener {
 		
 		this.addView("Part 1", new Part1Panel());
 		this.addView("Part 2", new Part2Panel());
+		this.addView("Part 3", new Part3Panel());
 		
 		this.combo.setSelectedIndex(0);
 		

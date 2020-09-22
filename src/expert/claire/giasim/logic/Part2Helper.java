@@ -1,10 +1,8 @@
-package expert.claire.giasim.gui;
+package expert.claire.giasim.logic;
 
 import java.util.Random;
 
 import javax.swing.JTextArea;
-
-import expert.claire.giasim.logic.RandHelper;
 
 public class Part2Helper {
 
