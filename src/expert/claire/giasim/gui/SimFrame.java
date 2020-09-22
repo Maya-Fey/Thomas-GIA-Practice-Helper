@@ -37,8 +37,8 @@ public class SimFrame extends JFrame implements ActionListener {
 		this.combo.addActionListener(this);
 		
 		this.addView("Part 1", new Part1Panel());
+		this.addView("Part 2", new Part2Panel());
 		
-		System.out.println("fin");
 		this.combo.setSelectedIndex(0);
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -54,9 +54,11 @@ public class SimFrame extends JFrame implements ActionListener {
 	public void setView(String view)
 	{
 		this.panel.removeAll();
-		this.setLayout(new BorderLayout());
-		this.add(this.combo, BorderLayout.NORTH);
-		this.add(this.panels.get(view), BorderLayout.CENTER);
+		this.panel.setLayout(new BorderLayout());
+		this.panel.add(this.combo, BorderLayout.NORTH);
+		this.panel.add(this.panels.get(view), BorderLayout.CENTER);
+		this.revalidate();
+		this.repaint();
 	}
 
 	@Override

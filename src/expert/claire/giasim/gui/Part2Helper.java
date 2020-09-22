@@ -33,13 +33,13 @@ public class Part2Helper {
 		char n;
 		do {
 			n = randChar();
-		} while(n != c);
+		} while(n == c);
 		return toLower(n);
 	}
 	
 	public static char toLower(char c) 
 	{
-		return (char) (c - ('a' - 'A'));
+		return (char) (c + ('a' - 'A'));
 	}
 	
 	public static char randChar()
